@@ -40,3 +40,10 @@ samples, guidance on mobile development, and a full API reference.
 
 build/app/outputs/flutter-apk/app-release.apk
 
+
+## Add release
+`git tag -a v?.?.? -m "Release v?.?.?"`
+`git push origin v?.?.?`
+
+### Release title
+Wheel of Luck v?.?.?

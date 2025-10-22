@@ -99,7 +99,7 @@ class _DecoratedWheelState extends State<DecoratedWheel>
             elevation: 10,
           ),
           child: const Text(
-            "SPIN",
+            "🌀",
             style: TextStyle(
               color: Colors.black,
               fontWeight: FontWeight.bold,
@@ -111,9 +111,9 @@ class _DecoratedWheelState extends State<DecoratedWheel>
 
         // 🧭 Pointer (fixed)
         Positioned(
-          top: 0,
+          top: 20,
           child: CustomPaint(
-            size: const Size(75, 50),
+            size: const Size(110, 30),
             painter: PointerPainter(),
           ),
         ),

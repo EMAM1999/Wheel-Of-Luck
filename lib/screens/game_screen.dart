@@ -68,7 +68,7 @@ class _GameScreenState extends State<GameScreen> {
           "🎡 Wheel Of Luck 🎡",
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 18,
+            fontSize: 20,
             color: Colors.white,
             shadows: [Shadow(color: Colors.black, blurRadius: 2)],
           ),
