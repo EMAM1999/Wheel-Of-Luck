@@ -1,4 +1,6 @@
-class WheelItem {
+import 'package:wheel_of_luck/models/Item.dart';
+
+class WheelItem extends Item {
   String symbol;
   String content;
   int points;
@@ -9,13 +11,14 @@ class WheelItem {
     required this.points,
   });
 
-  Map<String, dynamic> toMap() => {
+  @override
+  Map<String, dynamic> toJson() => {
     'symbol': symbol,
     'content': content,
     'points': points,
   };
 
-  factory WheelItem.fromMap(Map<String, dynamic> map) => WheelItem(
+  factory WheelItem.fromJson(Map<String, dynamic> map) => WheelItem(
     symbol: map['symbol'] ?? '',
     content: map['content'] ?? '',
     points: map['points'] ?? 0,

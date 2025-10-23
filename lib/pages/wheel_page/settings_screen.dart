@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:wheel_of_luck/utils/game_logic.dart';
-import 'package:wheel_of_luck/utils/local_storage.dart';
-import '../models/player.dart';
-import '../models/wheel_item.dart';
+import 'package:wheel_of_luck/pages/wheel_page/utils/wheel_storage.dart';
+import '../../models/player.dart';
+import '../../models/wheel_item.dart';
 
 class SettingsScreen extends StatefulWidget {
   final List<Player> players;
@@ -46,12 +45,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
   void _save() async {
     // ✅ Update global list used by GameLogic
-    defaultItems
+    getItems()
       ..clear()
       ..addAll(items);
 
     // Persist changes
-    await LocalStorage.saveItems(defaultItems);
+    await saveItems(getItems());
 
     // ✅ Return data to game screen
     Navigator.pop(context, {'players': players, 'items': items});

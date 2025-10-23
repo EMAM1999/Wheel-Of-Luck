@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
-import '../utils/game_logic.dart';
-import '../widgets/player_card.dart';
-import '../widgets/decorated_wheel.dart';
-import '../screens/settings_screen.dart';
-import '../models/player.dart';
-import '../models/wheel_item.dart';
+import 'package:wheel_of_luck/pages/wheel_page/utils/wheel_storage.dart';
+import 'utils/game_logic.dart';
+import '../../widgets/player_card.dart';
+import '../../widgets/decorated_wheel.dart';
+import 'settings_screen.dart';
+import '../../models/player.dart';
+import '../../models/wheel_item.dart';
 
-class GameScreen extends StatefulWidget {
-  const GameScreen({super.key});
+class WheelPage extends StatefulWidget {
+  const WheelPage({super.key});
 
   @override
-  State<GameScreen> createState() => _GameScreenState();
+  State<WheelPage> createState() => _GameScreenState();
 }
 
-class _GameScreenState extends State<GameScreen> {
+class _GameScreenState extends State<WheelPage> {
   late GameLogic game;
   bool showOverlay = false;
 
@@ -73,7 +74,7 @@ class _GameScreenState extends State<GameScreen> {
             shadows: [Shadow(color: Colors.black, blurRadius: 2)],
           ),
         ),
-        backgroundColor: Colors.deepPurpleAccent,
+        backgroundColor: Colors.deepPurple,
         actions: [
           IconButton(
             icon: const Icon(Icons.settings),
@@ -81,10 +82,8 @@ class _GameScreenState extends State<GameScreen> {
               final result = await Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (_) => SettingsScreen(
-                    players: game.players,
-                    items: defaultItems,
-                  ),
+                  builder: (_) =>
+                      SettingsScreen(players: game.players, items: getItems()),
                 ),
               );
 
@@ -102,7 +101,7 @@ class _GameScreenState extends State<GameScreen> {
             onPressed: () {
               showAboutDialog(
                 context: context,
-                applicationName: 'Wheel of Luck',
+                applicationName: '🎡 Wheel Of Luck 🎡',
                 applicationVersion: '1.0.1',
                 applicationLegalese:
                     '© 2025 Eng.Mohamed Ashraf (EMAM)\nLicensed under the MIT License.\nVisit: github.com/EMAM1999',

@@ -7,9 +7,8 @@ author: Eng.Mohamed Ashraf Hamza (Emam) <moh.ash.ham.998@gmail.com> <https://git
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
-# TODO: Add a repo
-# repository: https://github.com/yourusername/wheel_of_luck
-# issue_tracker: https://github.com/yourusername/wheel_of_luck/issues
+repository: https://github.com/EMAM1999/Wheel-Of-Luck
+issue_tracker: https://github.com/EMAM1999/Wheel-Of-Luck/issues
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -36,6 +35,8 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  intl: ^0.19.0
+
   flutter:
     sdk: flutter
   shared_preferences: ^2.3.2
