@@ -3,7 +3,12 @@ import 'package:wheel_of_luck/services/local_storage.dart';
 
 const _eventsKey = 'events_data';
 
-List<EventItem> _storedElements = [];
+List<EventItem> _storedElements = [
+  EventItem(name: 'عيد ميلاد ميدو', date: DateTime(1999, 1, 10, 12, 00)),
+  EventItem(name: 'عيد ميلاد دندن', date: DateTime(2005, 1, 1, 12, 00)),
+  EventItem(name: 'الرؤية الشرعية', date: DateTime(2025, 6, 20, 20, 00)),
+  EventItem(name: 'الخطوبة', date: DateTime(2025, 7, 2, 21, 00)),
+];
 
 List<EventItem> getEvents() => _storedElements;
 

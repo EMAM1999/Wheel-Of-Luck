@@ -15,6 +15,7 @@ class AboutPage extends StatelessWidget {
           "License: MIT\n"
           "Version: 1.0.0\n\n"
           "A creative collection of fun and tools by EMAM.",
+
           style: TextStyle(fontSize: 16),
         ),
       ),
