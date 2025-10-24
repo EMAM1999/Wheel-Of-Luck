@@ -12,6 +12,8 @@ class EventsPage extends StatefulWidget {
 }
 
 class _EventsPageState extends State<EventsPage> {
+  static const firstDate = 1950;
+  static const lastDate = 2100;
   final DateFormat _dateFormat = DateFormat('yyyy-MM-dd HH:mm');
 
   @override
@@ -51,8 +53,8 @@ class _EventsPageState extends State<EventsPage> {
                 final pickedDate = await showDatePicker(
                   context: context,
                   initialDate: DateTime.now(),
-                  firstDate: DateTime(1950),
-                  lastDate: DateTime(2100),
+                  firstDate: DateTime(firstDate),
+                  lastDate: DateTime(lastDate),
                 );
 
                 if (pickedDate == null) return;
@@ -120,8 +122,8 @@ class _EventsPageState extends State<EventsPage> {
                   final pickedDate = await showDatePicker(
                     context: context,
                     initialDate: event.date,
-                    firstDate: DateTime(2000),
-                    lastDate: DateTime(2100),
+                    firstDate: DateTime(firstDate),
+                    lastDate: DateTime(lastDate),
                   );
 
                   if (pickedDate != null) {
