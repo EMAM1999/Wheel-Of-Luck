@@ -33,7 +33,7 @@ Future<void> clear() async {
   LocalStorage.clear(_eventsKey);
 }
 
-Future<void> initializeData() async {
+Future<void> initializeEventsData() async {
   // Load from storage
   final localElements = await loadEvents();
 

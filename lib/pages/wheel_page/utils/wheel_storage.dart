@@ -30,7 +30,7 @@ Future<void> clear() async {
   LocalStorage.clear(_itemsKey);
 }
 
-Future<void> initializeData() async {
+Future<void> initializeWheelData() async {
   // Load from storage
   final localElements = await loadItems();
 
