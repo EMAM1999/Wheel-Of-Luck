@@ -13,7 +13,7 @@ class AboutPage extends StatelessWidget {
           "🎯 EMAM Hub\n\n"
           "Developed by Mohamed Ashraf Hamza (EMAM)\n"
           "License: MIT\n"
-          "Version: 1.0.0\n\n"
+          "Version: 2.0.1\n\n"
           "A creative collection of fun and tools by EMAM.",
 
           style: TextStyle(fontSize: 16),

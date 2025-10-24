@@ -102,7 +102,7 @@ class _GameScreenState extends State<WheelPage> {
               showAboutDialog(
                 context: context,
                 applicationName: '🎡 Wheel Of Luck 🎡',
-                applicationVersion: '1.0.1',
+                applicationVersion: '2.0.1',
                 applicationLegalese:
                     '© 2025 Eng.Mohamed Ashraf (EMAM)\nLicensed under the MIT License.\nVisit: github.com/EMAM1999',
               );

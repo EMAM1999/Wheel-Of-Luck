@@ -193,19 +193,19 @@ class _EventsPageState extends State<EventsPage> {
         centerTitle: true,
         backgroundColor: Colors.deepPurple,
         actions: [
-          IconButton(
-            icon: Icon(Icons.info_outline),
-            onPressed: () {
-              showAboutDialog(
-                context: context,
-                applicationName: '🎉 Events',
-                applicationVersion: '1.0.0',
-                applicationLegalese:
-                    '© 2025 Eng.Mohamed Ashraf (EMAM)\nLicensed under the MIT License.\nVisit: github.com/EMAM1999',
-              );
-            },
-          ),
-          const SizedBox(width: 5),
+          // IconButton(
+          //   icon: Icon(Icons.info_outline),
+          //   onPressed: () {
+          //     showAboutDialog(
+          //       context: context,
+          //       applicationName: '🎉 Events',
+          //       applicationVersion: '1.0.0',
+          //       applicationLegalese:
+          //           '© 2025 Eng.Mohamed Ashraf (EMAM)\nLicensed under the MIT License.\nVisit: github.com/EMAM1999',
+          //     );
+          //   },
+          // ),
+          // const SizedBox(width: 5),
         ],
       ),
       floatingActionButton: FloatingActionButton.extended(
